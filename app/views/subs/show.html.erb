@@ -1,0 +1,9 @@
+<h1><%= @sub.name %></h1>
+<br />
+<p>What do you want it to do</p>
+
+<%= link_to 'View Topics', sub_topics_path(@sub) %>
+<br />
+<%= link_to 'Edit sub', edit_sub_path(@sub) %>
+<br />
+<%= link_to 'Delete sub', @sub, method: :delete %>
