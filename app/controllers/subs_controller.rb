@@ -10,7 +10,7 @@ class SubsController < ApplicationController
   #actions - what you do on the app
     #actions must return a response
     #HTML XML JSON
-    # IF IT DOESNT RETURN A RESPOND THEN REDIRECT TO ANOTHER ACTIONS THAT DOES
+    # IF IT DOESNT RETURN A RESPONSE THEN REDIRECT TO ANOTHER ACTIONS THAT DOES
 
     #callback - preform logic at certain actions
     # before_action
@@ -167,7 +167,7 @@ def index
     if  @sub.update(sub_params)
       redirect_to subs_path
     else
-      render edit
+      render :edit
     end
   end
 
